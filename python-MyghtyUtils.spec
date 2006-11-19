@@ -4,13 +4,14 @@
 Summary:    Container and Utility Functions from the Myghty Template Framework
 Name:		python-%{fname}
 Version:	0.52
-Release:	0.1
+Release:	0.2
 License:	MIT
 Group:		Libraries/Python
 Source0:    http://cheeseshop.python.org/packages/source/M/%{fname}/%{fname}-%{version}.zip
 # Source0-md5:   a15cda5919509024245802f4028b1560
 URL:		http://www.myghty.org/
 BuildRequires:  python-setuptools
+BuildRequires:  unzip
 Requires:	python >= %{python_version}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

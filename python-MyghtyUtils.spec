@@ -1,16 +1,17 @@
 %define 	module	        myghtyutils
 %define		fname           MyghtyUtils
+%define     python_version  2.4
 Summary:	Container and Utility Functions from the Myghty Template Framework
 Summary(pl):	Funkcje kontenerowe i narzêdziowe z Myghty Template Framework
 Name:		python-%{fname}
 Version:	0.52
-Release:	0.2
+Release:	0.3
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/M/MyghtyUtils/%{fname}-%{version}.zip
 # Source0-md5:	a15cda5919509024245802f4028b1560
 URL:		http://www.myghty.org/
-BuildRequires:	python >= 1:2.5
+BuildRequires:	python >= %{python_version}
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
@@ -77,4 +78,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{py_sitescriptdir}/%{module}
-%{py_sitescriptdir}/%{fname}-%{version}-py*.egg-info
+%{py_sitescriptdir}/%{fname}-%{version}-py%{python_version}.egg-info

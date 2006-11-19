@@ -12,6 +12,7 @@ Source0:	http://cheeseshop.python.org/packages/source/M/MyghtyUtils/%{fname}-%{v
 URL:		http://www.myghty.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	python-setuptools
+BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
 %pyrequires_eq	python-libs
 BuildArch:	noarch

@@ -16,6 +16,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
 %pyrequires_eq	python-libs
+Requires:   python-setuptools
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

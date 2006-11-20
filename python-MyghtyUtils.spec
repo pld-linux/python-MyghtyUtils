@@ -1,6 +1,6 @@
 %define 	module	        myghtyutils
 %define		fname           MyghtyUtils
-%define     python_version  2.4
+%define     python_version  2.5
 Summary:	Container and Utility Functions from the Myghty Template Framework
 Summary(pl):	Funkcje kontenerowe i narzêdziowe z Myghty Template Framework
 Name:		python-%{fname}

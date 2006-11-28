@@ -1,6 +1,4 @@
-%define 	module	        myghtyutils
-%define		fname           MyghtyUtils
-%define     python_version  2.5
+%define		fname		MyghtyUtils
 Summary:	Container and Utility Functions from the Myghty Template Framework
 Summary(pl):	Funkcje kontenerowe i narzêdziowe z Myghty Template Framework
 Name:		python-%{fname}
@@ -11,7 +9,7 @@ Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/M/MyghtyUtils/%{fname}-%{version}.zip
 # Source0-md5:	a15cda5919509024245802f4028b1560
 URL:		http://www.myghty.org/
-BuildRequires:	python >= %{python_version}
+BuildRequires:	python >= 1:2.5
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	unzip
@@ -77,5 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{py_sitescriptdir}/%{module}
-%{py_sitescriptdir}/%{fname}-%{version}-py%{python_version}.egg-info
+%{py_sitescriptdir}/myghtyutils
+%{py_sitescriptdir}/%{fname}-%{version}-py*.egg-info

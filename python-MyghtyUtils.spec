@@ -1,6 +1,6 @@
 %define		fname		MyghtyUtils
 Summary:	Container and Utility Functions from the Myghty Template Framework
-Summary(pl):	Funkcje kontenerowe i narzêdziowe z Myghty Template Framework
+Summary(pl.UTF-8):   Funkcje kontenerowe i narzÄ™dziowe z Myghty Template Framework
 Name:		python-%{fname}
 Version:	0.52
 Release:	0.3
@@ -37,23 +37,23 @@ similar interface to mod_python session. Currently needs a
 mod_python-like request object, this should be changed to something
 more generic.
 
-%description -l pl
-Zbiór klas narzêdziowych u¿ywanych przez szablony Myghty. Zawiera:
+%description -l pl.UTF-8
+ZbiÃ³r klas narzÄ™dziowych uÅ¼ywanych przez szablony Myghty. Zawiera:
 
-container - system kontenerowy zapewniaj±cy przechowywanie danych
-klucz-warto¶æ niezale¿nie od backendu, obs³uguj±cy pamiêæ, pliki DBM,
-pliki p³askie i memcached
+container - system kontenerowy zapewniajÄ…cy przechowywanie danych
+klucz-wartoÅ›Ä‡ niezaleÅ¼nie od backendu, obsÅ‚ugujÄ…cy pamiÄ™Ä‡, pliki DBM,
+pliki pÅ‚askie i memcached
 
-buffer - funkcje dla powiêkszaj±cych siê obiektów plikowych
+buffer - funkcje dla powiÄ™kszajÄ…cych siÄ™ obiektÃ³w plikowych
 
-util - ró¿ne funkcje i obiekty narzêdziowe
+util - rÃ³Å¼ne funkcje i obiekty narzÄ™dziowe
 
-synchronizer - synchronizacja dla wielu czytaj±cych/jednego pisz±cego
-przy u¿yciu muteksów w±tkowych lub plików blokad
+synchronizer - synchronizacja dla wielu czytajÄ…cych/jednego piszÄ…cego
+przy uÅ¼yciu muteksÃ³w wÄ…tkowych lub plikÃ³w blokad
 
 session - interfejs do sesji zbudowany w oparciu o kontener, podobnie
-jak sesje mod_python; aktualnie wymaga obiektu ¿±dania podobnego do
-mod_pythona, powinno siê to zmieniæ na co¶ bardziej ogólnego.
+jak sesje mod_python; aktualnie wymaga obiektu Å¼Ä…dania podobnego do
+mod_pythona, powinno siÄ™ to zmieniÄ‡ na coÅ› bardziej ogÃ³lnego.
 
 %prep
 %setup -qn %{fname}-%{version}

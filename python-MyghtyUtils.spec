@@ -1,6 +1,6 @@
 %define		fname		MyghtyUtils
 Summary:	Container and Utility Functions from the Myghty Template Framework
-Summary(pl.UTF-8):   Funkcje kontenerowe i narzędziowe z Myghty Template Framework
+Summary(pl.UTF-8):	Funkcje kontenerowe i narzędziowe z Myghty Template Framework
 Name:		python-%{fname}
 Version:	0.52
 Release:	0.3

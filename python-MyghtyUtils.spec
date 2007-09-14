@@ -9,9 +9,10 @@ Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/M/MyghtyUtils/%{fname}-%{version}.zip
 # Source0-md5:	a15cda5919509024245802f4028b1560
 URL:		http://www.myghty.org/
-BuildRequires:	python >= 1:2.5
+BuildRequires:	python >= 1:2.4
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
+BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	unzip
 %pyrequires_eq	python-libs
 BuildArch:	noarch
@@ -68,7 +69,7 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
-find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
+%py_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
